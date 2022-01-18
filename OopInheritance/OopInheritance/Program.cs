@@ -6,6 +6,13 @@ namespace OopInheritance
     {
         static void Main(string[] args)
         {
+            Shape r = new Rectangle(new Point(10, 10), 10, 20);
+            // Shape r = new Shape();
+            Console.WriteLine($"Area={r.Area}");
+            r.Rotate(30);
+            Console.WriteLine($"Area={r.Area}");
+
+            /*
             ExcelFile excelFile = new ExcelFile("Paycheck", "Excel 2019");
             PdfFile pdfFileNonEditable = new PdfFile("Book Abc", false);
             PdfFile pdfFileEditable = new PdfFile("Declaratie pe proprie raspundere", true);
@@ -28,6 +35,7 @@ namespace OopInheritance
 
             pdfFileNonEditable.AttemptEdit();
             pdfFileEditable.AttemptEdit();
+            */
         }
     }
 }
